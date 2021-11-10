@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DCCA793-892F-4B1B-9422-BFF15B0A7F20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jiraworklog</RootNamespace>
+    <AssemblyName>Jiraworklog</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADAO12PL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\ADAO12PL.DLL</HintPath>
+    </Reference>
+    <Reference Include="EXCELPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\EXCELPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="FORMSPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\FORMSPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="GRAFPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\GRAFPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="GRAPHPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\GRAPHPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPCLRSMI">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPCLRSMI.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPCLRWRP">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPCLRWRP.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPDMCTRL, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPDMCTRL.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPFCPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPFCPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPHPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPHPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPOMPERM">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPOMPERM.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPOPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPOPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPPIAPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPPIAPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPPPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPPPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPXMLPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPXMLPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="IPXMLPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPXMLPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="IPXPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\IPXPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="MSTAGPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\MSTAGPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MSTAGPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\MSTAGPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="MSTG12PL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\MSTG12PL.DLL</HintPath>
+    </Reference>
+    <Reference Include="OCTLPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OCTLPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="OFF12PL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OFF12PL.DLL</HintPath>
+    </Reference>
+    <Reference Include="OFFICE, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OFFICE.DLL</HintPath>
+    </Reference>
+    <Reference Include="OFFICEPL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OFFICEPL.DLL</HintPath>
+    </Reference>
+    <Reference Include="OLCTLPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OLCTLPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OLCTLPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OLCTLPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="ONPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\ONPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ONPIA14">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\ONPIA14.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OUTLPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OUTLPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OUTLPL12">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OUTLPL12.DLL</HintPath>
+    </Reference>
+    <Reference Include="OUTLPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\OUTLPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="POLICY.12.0.MICROSOFT.OFFICE.INTEROP.MSPROJECT">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\POLICY.12.0.MICROSOFT.OFFICE.INTEROP.MSPROJECT.DLL</HintPath>
+    </Reference>
+    <Reference Include="PPT12PL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\PPT12PL.DLL</HintPath>
+    </Reference>
+    <Reference Include="PPTPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\PPTPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PPTPOL">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\PPTPOL.DLL</HintPath>
+    </Reference>
+    <Reference Include="PROJPIA">
+      <HintPath>C:\Program Files (x86)\Microsoft Office\DLLs\PROJPIA.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeLog.cs" />
+    <Compile Include="common.cs" />
+    <Compile Include="jirareport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jirareport.Designer.cs">
+      <DependentUpon>jirareport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issuedata.cs" />
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Jasondata.cs" />
+    <EmbeddedResource Include="jirareport.resx">
+      <DependentUpon>jirareport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
