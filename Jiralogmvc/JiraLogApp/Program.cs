@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 using JiralogMVC.Controller;
 using JiralogMVC.View;
-
+//Test for sonarqube
 namespace JiralogMVC
 {
     static class Program
